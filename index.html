@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FortniteHub</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-  <style>
-   
-
-
-header, footer {
+    <title>Document</title>
+    <style>
+        header, footer {
     text-align: center;
     padding: 20px;
     float: left;
     width: 100%;
     
 }
-
 span {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
@@ -30,9 +27,9 @@ span {
     padding: 10px;
     float: left;
     width: 50%;
-    font-size: 40px;
+    font-size: 3vw;
     text-align: right;
-    border-radius: 30px 0px 0px 30px;
+   
 }
 
 .orange-background {
@@ -41,28 +38,11 @@ span {
     padding: 10px;
     float: left;
     width: 50%;
-    font-size: 40px;
+    font-size: 3vw;
     text-align: left;
-    border-radius: 0px 30px 30px 0px;
+    text-wrap:nowrap;
+    
 }
-#filmy {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        #filmy div {
-            width: 32%; 
-            box-sizing: border-box; 
-            padding: 10px;
-            margin: 10px;
-        }
-body {
-  background-color: #0b0b0b;
-}
-
-main{
-    margin-top: 80px;
-}
-
 nav-link{
     font-weight: 500;
 }
@@ -76,140 +56,161 @@ nav{
 cursor:pointer;
 }
 
+.embed-responsive iframe {
+    width: 100%;
+     
+}
 
-  
-  </style>
+body {
+  background-color: #0b0b0b;
+}
 
+
+
+    </style>
 </head>
-
 <body>
-<header>
-  <span class="white-text">Fortnite</span>
-  <span class="orange-background black-text">Hub</span>
-</header>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-orange" style="float:left;">
-    <div class="container-fluid"  style="background-color: orange; font-weight: 500;">
-      <a class="navbar-brand" id="kursx" onclick="vbuck();" >Kurs V-dolca</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#kontakt">Kontakt z Autorem</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="https://fnbr.co/shop/">Dzisiejszy Sklep Fortnite</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="background-color: orange; font-weight: 500;">
-              Kategorie
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown" style="background-color: transparent; font-weight: 500;">
+    <header>
+        <span class="white-text">Fortnite</span>
+        <span class="orange-background black-text">Hub</span>
+      </header>
 
-                <input type="checkbox" class="btn-check" id="tutorial" autocomplete="off" onclick="filtr();" >
-                <label class="btn btn-outline-warning" for="tutorial">Poradniki</label>
-
-                <input type="checkbox" class="btn-check" id="gaming" autocomplete="off" onclick="filtr();" >
-                <label class="btn btn-outline-warning" for="gaming">Gaming</label>
-              
-                <input type="checkbox" class="btn-check" id="komp" autocomplete="off" onclick="filtr();" >
-                <label class="btn btn-outline-warning" for="komp">Kompilacje</label>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Opublikuj nowy film(tymczasowo niedostępne)</a>
-          </li>
-        </ul>
-       
-      </div>
-    </div>
-  </nav>
-
-    <div class="btn-group" role="group" aria-label="Button group with nested dropdown" style="visibility: hidden;">
-        <div class="btn-group" role="group">
-          <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Kategorie
+      <nav class="navbar navbar-expand-lg navbar-light bg-orange " style="float:left; text-align: center;">
+        <div class="container-fluid "  style="background-color: orange; font-weight: 500;">
+          <a class="navbar-brand" id="kursx" onclick="vbuck();" >Kurs V-dolca</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-            <li>
-              <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                <input type="checkbox" class="btn-check" id="tutorial" autocomplete="off" onclick="filtr();">
-                <label class="btn btn-outline-primary" for="tutorial">Poradniki</label>
-              
-                <input type="checkbox" class="btn-check" id="gaming" autocomplete="off" onclick="filtr();">
-                <label class="btn btn-outline-primary" for="gaming">Gaming</label>
-              
-                <input type="checkbox" class="btn-check" id="komp" autocomplete="off" onclick="filtr();">
-                <label class="btn btn-outline-primary" for="komp">Kompilacje</label>
-              </div>
-            </li>
-          </ul>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#kontakt">Kontakt z Autorem</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="https://fnbr.co/shop/">Dzisiejszy Sklep Fortnite</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="background-color: orange; font-weight: 500;">
+                  Kategorie
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown" style="background-color: transparent; font-weight: 500;">
+    
+                    <input type="checkbox" class="btn-check" id="tutorial" autocomplete="off" onclick="filtr();" >
+                    <label class="btn btn-outline-warning" for="tutorial">Poradniki</label>
+    
+                    <input type="checkbox" class="btn-check" id="gaming" autocomplete="off" onclick="filtr();" >
+                    <label class="btn btn-outline-warning" for="gaming">Gaming</label>
+                  
+                    <input type="checkbox" class="btn-check" id="komp" autocomplete="off" onclick="filtr();" >
+                    <label class="btn btn-outline-warning" for="komp">Kompilacje</label>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Opublikuj nowy film(tymczasowo niedostępne)</a>
+              </li>
+            </ul>
+           
+          </div>
         </div>
-    </div> 
-<main>
-    <div id="filmy">
-        <div id="film1" class="poradniki">
-          <iframe width="100%" height="300" src="https://www.youtube.com/embed/A9iJEj2PqWo" title="How to Build in Fortnite - and actually USE those skills" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   </div>
-        <div id="film2" class="gaming">
-          <iframe width="100%" height="300" src="https://www.youtube.com/embed/F4ZAd1G-Sqw" title="My Thoughts on The NEW DMR Update" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    </div>
-        <div id="film3" class="komp">
-          <iframe width="100%" height="300" src="https://www.youtube.com/embed/wseRQCw203M" title="FORTNITE FAILS &amp; Epic Wins! #363 (Fortnite Season 4 Funny Moments)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div>
-        <div id="film4" class="poradniki">
-          <iframe width="100%" height="300" src="https://www.youtube.com/embed/FLpOayvb0rM" title="How To Do 90s - Beginner Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    </div>
-        <div id="film5" class="komp">
-          <iframe width="100%" height="300" src="https://www.youtube.com/embed/pATRIA7RuM8" title="FORTNITE FAILS &amp; Epic Wins! #364 (Fortnite Season 4 Funny Moments)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  </div>
-        <div id="film6" class="komp">
-          <iframe width="100%" height="300" src="https://www.youtube.com/embed/-_h6h9qDJSs" title="MOST ICONIC FORTNITE MOMENTS OF ALL TIME" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  </div>
-        <div id="film7" class="gaming">
-          <iframe width="100%" height="300" src="https://www.youtube.com/embed/l9unIEtdWMw" title="Fortnite&#39;s Biggest Problem..." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    </div>
-        <div id="film8" class="poradniki">
-          <iframe width="100%" height="300" src="https://www.youtube.com/embed/pZIoaB282AY" title="How to Become a Better Fighter FAST" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   </div>
-        <div id="film9" class="gaming">
-          <iframe width="100%" height="300" src="https://www.youtube.com/embed/WJOL6IgI-Wo" title="I Was Hacked." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>     </div>
+      </nav>    
+   
 
-        
-    </div>
-</main>
- 
 
-    <footer id="kontakt">
-      <span class="white-text">Autor: <br> Email: </span>
-      <span class="orange-background black-text">Filip Wójtowicz <br> Wojtowicz.filip@zst.radom.pl</span>
-    </footer>
-  
-    <script>
-       function filtr() {
-    var filmy = document.getElementById('filmy').children;
+      <div class="container-fluid film-container" style="float: left; text-align: center; padding: 2%;" id="filmy">
+        <div class="row" id="filmy">
+            <div class="col test poradniki" id="filmy" >
+                <div id="film1" class="poradniki embed-responsive"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A9iJEj2PqWo" title="How to Build in Fortnite - and actually USE those skills" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   </div>
+            </div>
+            <div class="col test gaming" id="filmy">
+                <div id="film2" class="gaming embed-responsive"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/F4ZAd1G-Sqw" title="My Thoughts on The NEW DMR Update" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    </div> 
+            </div>
+            <div class="col test komp" id="filmy">
+                <div id="film3" class="komp embed-responsive"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wseRQCw203M" title="FORTNITE FAILS &amp; Epic Wins! #363 (Fortnite Season 4 Funny Moments)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col test poradniki" id="filmy">
+                <div id="film4" class="poradniki embed-responsive"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FLpOayvb0rM" title="How To Do 90s - Beginner Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    </div>
+            </div>
+            <div class="col test gaming" id="filmy">
+                <div id="film5" class="gaming embed-responsive"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pATRIA7RuM8" title="FORTNITE FAILS &amp; Epic Wins! #364 (Fortnite Season 4 Funny Moments)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  </div>
+            </div>
+            <div class="col test komp" id="filmy">
+                <div id="film6" class="komp embed-responsive"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-_h6h9qDJSs" title="MOST ICONIC FORTNITE MOMENTS OF ALL TIME" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  </div>
+            </div>
+          </div>
+
+          <div class="row" id="filmy" > 
+            <div class="col test poradniki" id="filmy">
+                <div id="film7" class="poradniki embed-responsive"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/l9unIEtdWMw" title="Fortnite&#39;s Biggest Problem..." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    </div>
+            </div>
+            <div class="col test gaming" id="filmy">
+                <div id="film8" class="gaming embed-responsive"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pZIoaB282AY" title="How to Become a Better Fighter FAST" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   </div>
+            </div>
+            <div class="col test komp" id="filmy">
+                <div id="film9" class="komp embed-responsive"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WJOL6IgI-Wo" title="I Was Hacked." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>     </div>
+            </div>
+          </div>
+      </div>
+
+
+
+
+
+
+      <footer id="kontakt">
+        <span class="white-text">Autor: <br> Email:  </span>
+        <span class="orange-background black-text">Filip Wójtowicz <br> Wojtowicz.Filip@zst.radom.pl</span>
+      </footer>
+
+
+<script>
+function filtr() {
+    var filmy = document.getElementsByClassName('test'); //wszystkie filmy
     var poradnikiChecked = document.getElementById('tutorial').checked;
     var gamingChecked = document.getElementById('gaming').checked;
     var kompChecked = document.getElementById('komp').checked;
 
+    if (!poradnikiChecked && !gamingChecked && !kompChecked) {
+        //jesli zaden nie jest zaznaczony to kazy sie pojawia
+        for (var i = 0; i < filmy.length; i++) {
+            var film = filmy[i];
+            film.style.display = 'block';
+        }
+        return; 
+    }
+
     for (var i = 0; i < filmy.length; i++) {
         var film = filmy[i];
         var id = film.getAttribute('id');
+        var tag = film.getAttribute('class');
 
-        if ((id.startsWith('film')) &&
-            (poradnikiChecked && film.classList.contains('poradniki') ||
-             gamingChecked && film.classList.contains('gaming') ||
-             kompChecked && film.classList.contains('komp'))) {
-            film.style.display = 'block';
-        } else {
-            film.style.display = 'none';
+        if (id.startsWith('film')) {
+            var visible = false;
+
+            if ((poradnikiChecked && tag.includes('poradniki')) ||
+                (gamingChecked && tag.includes('gaming')) ||
+                (kompChecked && tag.includes('komp'))) {
+                visible = true;
+            }
+
+            if (visible) {
+                film.style.display = 'block';
+            } else {
+                film.style.display = 'none';
+            }
         }
     }
 }
 
-        function vbuck(){
-          alert("Obecny kurs V-dolca wynosi 0,028zł");
+function vbuck() {
+  alert("Kurs V-Dolca wynosi 0.028zł")
+}
 
 
-          
-        }
-        
 
-    </script>
-
+</script>
 </body>
 </html>
